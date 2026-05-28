@@ -1,0 +1,1813 @@
+{
+  "categories": [
+    {
+      "id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Hand Tools",
+      "description": "Everyday hand tools and workshop essentials",
+      "slug": "hand-tools",
+      "created_at": "2026-05-18T00:41:20.553Z"
+    },
+    {
+      "id": "72300cef-87a6-419f-9077-2e6ffe80205d",
+      "name": "3D Printed",
+      "description": "Custom 3D printed parts and accessories",
+      "slug": "3d-printed",
+      "created_at": "2026-05-18T00:41:20.554Z"
+    },
+    {
+      "id": "288c2ba7-01b2-4365-b3a5-f3a60747be5e",
+      "name": "Hardware",
+      "description": "Fasteners, brackets, and hardware bits",
+      "slug": "hardware",
+      "created_at": "2026-05-18T00:41:20.554Z"
+    },
+    {
+      "id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "Resistors",
+      "description": "Fixed, variable, and specialty resistors",
+      "slug": "resistors",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "Capacitors",
+      "description": "Electrolytic, ceramic, film, and tantalum capacitors",
+      "slug": "capacitors",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "Semiconductors",
+      "description": "Diodes, transistors, MOSFETs, ICs, and LEDs",
+      "slug": "semiconductors",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "Passive Components",
+      "description": "Inductors, crystals, fuses, and other passive parts",
+      "slug": "passive-components",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "Connectors",
+      "description": "Headers, JST, Dupont, terminals, and wiring",
+      "slug": "connectors",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Soldering & Rework",
+      "description": "Solder, flux, wick, tips, and rework tools",
+      "slug": "soldering",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "Measurement",
+      "description": "Multimeters, probes, logic analysers, and bench equipment",
+      "slug": "measurement",
+      "created_at": "2026-05-19T00:26:56.130Z"
+    }
+  ],
+  "items": [
+    {
+      "id": "d3fb9d2c-9e17-4ff7-8621-da1511baf2f7",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Hex Key Set",
+      "description": "9-piece metric hex key set, chrome vanadium",
+      "price": 12.99,
+      "stock": 22,
+      "sku": "TL-HEX-001",
+      "image_url": null,
+      "active": true,
+      "created_at": "2026-05-18T00:41:20.554Z",
+      "updated_at": "2026-05-18T07:52:47.734Z",
+      "featured": true
+    },
+    {
+      "id": "2a2d1a54-e728-4b4c-ab2c-ceb5b6d1cb72",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Precision Screwdriver Kit",
+      "description": "32-bit magnetic screwdriver kit",
+      "price": 18.5,
+      "stock": 14,
+      "sku": "TL-SCREW-001",
+      "image_url": null,
+      "active": true,
+      "created_at": "2026-05-18T00:41:20.554Z",
+      "updated_at": "2026-05-18T07:52:47.734Z",
+      "featured": true
+    },
+    {
+      "id": "69232b6a-bef5-4dda-8625-5ca43beb097a",
+      "category_id": "72300cef-87a6-419f-9077-2e6ffe80205d",
+      "name": "Cable Organizer Clip",
+      "description": "Desk cable management clip, pack of 6",
+      "price": 5.99,
+      "stock": 48,
+      "sku": "PRT-CABLE-001",
+      "image_url": "/uploads/item-1779078208821.png",
+      "active": true,
+      "created_at": "2026-05-18T00:41:20.554Z",
+      "updated_at": "2026-05-18T23:26:05.099Z",
+      "featured": false
+    },
+    {
+      "id": "1b3381dc-a5d4-45e6-b622-bbfc206f09f6",
+      "category_id": "72300cef-87a6-419f-9077-2e6ffe80205d",
+      "name": "Filament Spool Holder",
+      "description": "Wall-mount spool holder for 1kg spools",
+      "price": 9.99,
+      "stock": 10,
+      "sku": "PRT-SPOOL-001",
+      "image_url": null,
+      "active": true,
+      "created_at": "2026-05-18T00:41:20.554Z",
+      "updated_at": "2026-05-18T23:23:47.865Z",
+      "featured": false
+    },
+    {
+      "id": "52bd19a9-670a-4446-b5ff-f11112b93336",
+      "category_id": "288c2ba7-01b2-4365-b3a5-f3a60747be5e",
+      "name": "M3 Bolt Assortment",
+      "description": "200-piece M3 bolt, nut and washer kit",
+      "price": 8.99,
+      "stock": 29,
+      "sku": "HW-M3-001",
+      "image_url": null,
+      "active": true,
+      "created_at": "2026-05-18T00:41:20.554Z",
+      "updated_at": "2026-05-18T07:52:47.734Z",
+      "featured": false
+    },
+    {
+      "id": "4f79220c-a188-4f8f-a133-da91c68886cf",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "1/4W Metal Film Resistor Kit (600 pcs)",
+      "description": "10 Ohm to 1M Ohm, E24 series, 1% tolerance, labelled bags",
+      "price": 14.99,
+      "stock": 40,
+      "sku": "RES-KIT-E24-600",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "ece04b76-a32e-4205-a490-d92d6e07e820",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "10 Ohm Resistor 1/4W (Pack of 50)",
+      "description": "1/4W 10R metal film, 1% tolerance",
+      "price": 2.5,
+      "stock": 80,
+      "sku": "RES-10R-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "30299f9d-5f9b-429a-ae93-460364ec83ae",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "100 Ohm Resistor 1/4W (Pack of 50)",
+      "description": "1/4W 100R metal film, 1% tolerance",
+      "price": 2.5,
+      "stock": 80,
+      "sku": "RES-100R-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "d47cd79b-64e7-45e0-8266-00a3cafd9f23",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "1K Resistor 1/4W (Pack of 50)",
+      "description": "1/4W 1K metal film, 1% tolerance",
+      "price": 2.5,
+      "stock": 80,
+      "sku": "RES-1K-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "29c4bac6-2a54-4c7f-8b52-398f4ab7fb95",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "10K Resistor 1/4W (Pack of 50)",
+      "description": "1/4W 10K metal film, 1% tolerance",
+      "price": 2.5,
+      "stock": 80,
+      "sku": "RES-10K-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "d919105b-88ef-4dcf-b8cb-b7dbe3406edf",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "100K Resistor 1/4W (Pack of 50)",
+      "description": "1/4W 100K metal film, 1% tolerance",
+      "price": 2.5,
+      "stock": 80,
+      "sku": "RES-100K-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "5fa4907e-296d-406b-8066-663fa21a6e4d",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "10K Potentiometer (Pack of 5)",
+      "description": "10K single-turn through-hole potentiometer, B10K",
+      "price": 4.99,
+      "stock": 50,
+      "sku": "RES-POT-10K-5PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+      "category_id": "3ffc4ec8-ec47-40f9-8acd-497f3ebf9fcb",
+      "name": "1/2W Resistor Kit (300 pcs)",
+      "description": "300-piece 1/2W carbon film assortment, E12 series",
+      "price": 9.99,
+      "stock": 31,
+      "sku": "RES-KIT-HALF-300",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-22T08:14:57.839Z"
+    },
+    {
+      "id": "6c508495-e95d-4e6d-9826-95191bdb4190",
+      "category_id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "Electrolytic Capacitor Kit (120 pcs)",
+      "description": "16–50V, 1uF–1000uF, 12 values, 10 pcs each",
+      "price": 11.99,
+      "stock": 35,
+      "sku": "CAP-ELEC-KIT-120",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "e9f02bcd-3ec0-4f3d-b28b-ceb23a5f6b47",
+      "category_id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "Ceramic Capacitor Kit (300 pcs)",
+      "description": "1pF–100nF, 30 values, 10 pcs each, through-hole",
+      "price": 9.99,
+      "stock": 40,
+      "sku": "CAP-CER-KIT-300",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "b5a9041b-956c-4365-81e5-a6ed288a75ef",
+      "category_id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "100uF 25V Electrolytic (Pack of 20)",
+      "description": "100uF 25V radial electrolytic capacitor",
+      "price": 3.5,
+      "stock": 60,
+      "sku": "CAP-100UF-25V-20PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "825c1f2d-7140-4a50-860f-db3cf5d7efe1",
+      "category_id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "100nF Ceramic Disc (Pack of 50)",
+      "description": "100nF 50V ceramic disc decoupling capacitor",
+      "price": 3,
+      "stock": 80,
+      "sku": "CAP-100NF-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "9e9f2f50-c82b-4b48-9843-0cceb767d6d8",
+      "category_id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "10uF Tantalum Capacitor (Pack of 10)",
+      "description": "10uF 16V tantalum capacitor, SMD and DIP mixed pack",
+      "price": 5.99,
+      "stock": 30,
+      "sku": "CAP-TAN-10UF-10PK",
+      "image_url": "/uploads/item-1779747200451.jpg",
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-25T22:13:20.899Z",
+      "images": [
+        "/uploads/item-1779747200451.jpg"
+      ]
+    },
+    {
+      "id": "e193b8bf-f07e-4ab2-be7f-87365828c92d",
+      "category_id": "a616e360-5516-41a2-8f47-6fcfc9432a5b",
+      "name": "Film Capacitor Kit (100 pcs)",
+      "description": "Polyester film, 1nF–470nF, 10 values, 10 pcs each",
+      "price": 8.99,
+      "stock": 25,
+      "sku": "CAP-FILM-KIT-100",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "95a3cbcc-14d4-4ef4-99ea-74886273467e",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "1N4007 Rectifier Diode (Pack of 50)",
+      "description": "1A 1000V general-purpose rectifier diode",
+      "price": 2.99,
+      "stock": 70,
+      "sku": "SEMI-1N4007-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "08f2f926-cc24-4d3a-b8eb-8b6606e0d8a9",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "1N4148 Signal Diode (Pack of 50)",
+      "description": "100mA 100V fast switching signal diode",
+      "price": 2.99,
+      "stock": 70,
+      "sku": "SEMI-1N4148-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "b3f676e4-333e-4f54-a9ae-d934ff9b0822",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "5mm Red LED (Pack of 50)",
+      "description": "5mm red LED, 620–625nm, 20mA, diffused",
+      "price": 2.99,
+      "stock": 90,
+      "sku": "SEMI-LED-RED-50PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "3112346c-d4eb-4815-bbd6-3890df151e18",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "5mm Mixed LED Kit (Pack of 100)",
+      "description": "5mm LEDs in red, green, yellow, blue, white — 20 of each",
+      "price": 5.99,
+      "stock": 60,
+      "sku": "SEMI-LED-MIX-100PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "fb84e834-0366-45ce-81d5-617f805bd14f",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "BC547 NPN Transistor (Pack of 20)",
+      "description": "45V 100mA NPN general-purpose transistor",
+      "price": 3.5,
+      "stock": 60,
+      "sku": "SEMI-BC547-20PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "cb44eecb-f1ea-450d-a567-a59379a1186c",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "BC557 PNP Transistor (Pack of 20)",
+      "description": "45V 100mA PNP general-purpose transistor",
+      "price": 3.5,
+      "stock": 60,
+      "sku": "SEMI-BC557-20PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "d07194df-8f26-4814-a37d-1a797b85e46e",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "2N2222 NPN Transistor (Pack of 20)",
+      "description": "40V 800mA NPN transistor, TO-92 package",
+      "price": 3.99,
+      "stock": 50,
+      "sku": "SEMI-2N2222-20PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "eeb27f15-ac24-4ea9-801c-746fb0b28df0",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "IRF540N N-Channel MOSFET",
+      "description": "100V 33A N-channel MOSFET, TO-220, fast switching",
+      "price": 3.99,
+      "stock": 40,
+      "sku": "SEMI-IRF540N",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "0ae08b9a-d144-41e4-9408-32f051246729",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "IRF9540N P-Channel MOSFET",
+      "description": "100V 19A P-channel MOSFET, TO-220",
+      "price": 4.5,
+      "stock": 30,
+      "sku": "SEMI-IRF9540N",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "d754fefa-9850-4496-a514-99e798f1a9f7",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "LM317T Adjustable Regulator",
+      "description": "1.2–37V adjustable linear voltage regulator, TO-220",
+      "price": 2.5,
+      "stock": 50,
+      "sku": "SEMI-LM317T",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "4ce64fbf-37eb-40b2-b5b4-dff365daba12",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "NE555 Timer IC (Pack of 10)",
+      "description": "Classic NE555 timer IC, DIP-8 package",
+      "price": 4.99,
+      "stock": 50,
+      "sku": "SEMI-NE555-10PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "590b80d9-d62c-487b-b1ed-4a20f39792c8",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "LM741 Op-Amp (Pack of 5)",
+      "description": "General-purpose operational amplifier, DIP-8",
+      "price": 3.5,
+      "stock": 40,
+      "sku": "SEMI-LM741-5PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "8586a695-d02e-446b-8ef3-85cf29eef482",
+      "category_id": "c1ad86f4-fd71-492c-bc6d-c4693b383a88",
+      "name": "ATmega328P Microcontroller",
+      "description": "ATmega328P-PU DIP-28, Arduino Uno compatible",
+      "price": 6.99,
+      "stock": 30,
+      "sku": "SEMI-ATMEGA328P",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "a3ecfdf9-f51f-4cb6-aec6-55d1c72c4e73",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "10uH Inductor (Pack of 10)",
+      "description": "10uH axial inductor, 0.5A, through-hole",
+      "price": 3.99,
+      "stock": 40,
+      "sku": "PASS-IND-10UH-10PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "2115c4a2-d618-455b-b36a-6627a6df6b61",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "Inductor Assortment Kit (100 pcs)",
+      "description": "10uH–10mH, 10 values, 10 pcs each",
+      "price": 12.99,
+      "stock": 20,
+      "sku": "PASS-IND-KIT-100",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "811de693-f946-4ac4-9218-4c2ae801dfaf",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "16MHz Crystal Oscillator (Pack of 5)",
+      "description": "16MHz HC-49S crystal, Arduino compatible",
+      "price": 3.5,
+      "stock": 45,
+      "sku": "PASS-XTAL-16MHZ-5PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "d683d2c2-fef1-4b3e-9355-cb031b91483d",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "8MHz Crystal Oscillator (Pack of 5)",
+      "description": "8MHz HC-49S crystal oscillator",
+      "price": 3.5,
+      "stock": 35,
+      "sku": "PASS-XTAL-8MHZ-5PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "da5911ef-5f5d-4f97-a60c-e74ec03d4d27",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "Polyfuse Resettable Fuse Kit (50 pcs)",
+      "description": "0.1A–3A resettable PTC fuse assortment",
+      "price": 7.99,
+      "stock": 25,
+      "sku": "PASS-FUSE-KIT-50",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "2d7d8759-c95f-4271-8e11-0eb65784b497",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "Glass Fuse Assortment (100 pcs)",
+      "description": "5x20mm glass fuse kit, 0.5A–10A, fast-blow",
+      "price": 6.99,
+      "stock": 30,
+      "sku": "PASS-GLASS-FUSE-100",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "1150da4f-0c80-46d3-ab9a-372bfd6ddaf4",
+      "category_id": "87e9ff1a-fabd-4423-95a9-5cdc06eb47f9",
+      "name": "Piezo Buzzer (Pack of 5)",
+      "description": "5V active piezo buzzer, 85dB, 12mm diameter",
+      "price": 4.99,
+      "stock": 50,
+      "sku": "PASS-PIEZO-5PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "9fc17a45-44c3-4877-a7e1-ee35e30648f6",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "Male/Female Header Pin Kit (600 pcs)",
+      "description": "2.54mm pitch single-row headers, 40-pin strips, M&F pairs",
+      "price": 8.99,
+      "stock": 50,
+      "sku": "CONN-HDR-KIT-600",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "3c619985-b5e6-44a7-940b-f7da582635e8",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "2-Pin JST-XH Connector Set (10 pairs)",
+      "description": "2-pin JST-XH 2.5mm male and female with 150mm wire",
+      "price": 5.99,
+      "stock": 40,
+      "sku": "CONN-JST2-XH-10PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "0d4cceb9-c343-4807-ac7a-7f29dc59659e",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "3-Pin JST-XH Connector Set (10 pairs)",
+      "description": "3-pin JST-XH 2.5mm male and female with 150mm wire",
+      "price": 6.99,
+      "stock": 40,
+      "sku": "CONN-JST3-XH-10PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "e1da563d-9113-45f3-9cde-d5bdd32346d1",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "Dupont Wire Kit 120mm (120 pcs)",
+      "description": "M-M, M-F, F-F Dupont wires, 40 of each, 12cm",
+      "price": 6.99,
+      "stock": 60,
+      "sku": "CONN-DUP-KIT-120",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "fadcf49d-471d-4d49-aa8b-4029afd1a9bc",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "Dupont Wire Kit 200mm (120 pcs)",
+      "description": "M-M, M-F, F-F Dupont wires, 40 of each, 20cm",
+      "price": 7.99,
+      "stock": 50,
+      "sku": "CONN-DUP-KIT-200",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "20aa287c-3283-43df-b201-5b8fc3b6fd1e",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "Screw Terminal Block 2.54mm (20 pcs)",
+      "description": "2-pin 2.54mm PCB screw terminal block",
+      "price": 6.99,
+      "stock": 40,
+      "sku": "CONN-TERM-254-20PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "5755adbe-c964-4998-affa-c0a4ac89eea1",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "Screw Terminal Block 5.08mm (10 pcs)",
+      "description": "2-pin 5.08mm PCB screw terminal, 15A rated",
+      "price": 5.99,
+      "stock": 35,
+      "sku": "CONN-TERM-508-10PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "b1afcd6d-c3da-494f-b2dd-dbe070f2844f",
+      "category_id": "28e7c320-7956-4345-aa56-a5eba0fce110",
+      "name": "DC Barrel Jack Panel Mount (5 pcs)",
+      "description": "5.5x2.1mm DC barrel jack, PCB or panel mount",
+      "price": 4.99,
+      "stock": 45,
+      "sku": "CONN-BARREL-5PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "6a58f237-eff9-4b67-89ce-3477376ef490",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Solder Wire 60/40 250g",
+      "description": "60/40 tin/lead, 0.8mm diameter, rosin core, 250g reel",
+      "price": 14.99,
+      "stock": 30,
+      "sku": "SOLD-WIRE-6040-250",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "37a1289e-b2f2-42e3-891a-70fa88f94588",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Solder Wire 60/40 100g",
+      "description": "60/40 tin/lead, 0.8mm diameter, rosin core, 100g reel",
+      "price": 6.99,
+      "stock": 50,
+      "sku": "SOLD-WIRE-6040-100",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "3a8a9325-1d85-43d4-aa01-a63ca7c47def",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Lead-Free Solder Wire 250g",
+      "description": "Sn99.3/Cu0.7 lead-free solder, 0.8mm, 250g reel",
+      "price": 16.99,
+      "stock": 20,
+      "sku": "SOLD-WIRE-LF-250",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "937b1e22-ed99-4027-8aee-221a8e825d4d",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Rosin Flux Paste 10g",
+      "description": "No-clean rosin flux paste in syringe, for SMD and through-hole",
+      "price": 5.99,
+      "stock": 50,
+      "sku": "SOLD-FLUX-10G",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "992d8b69-2405-46c0-ac84-18013e1f001f",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Liquid Flux Pen",
+      "description": "No-clean flux pen, 10ml, ideal for SMD rework",
+      "price": 6.99,
+      "stock": 40,
+      "sku": "SOLD-FLUX-PEN",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "a97914eb-68d0-4c78-8ec9-dbc795f18534",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Desoldering Wick 1.5m",
+      "description": "2.5mm braid desoldering wick, rosin treated",
+      "price": 5.99,
+      "stock": 45,
+      "sku": "SOLD-WICK-15",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "90504eec-c8d5-4021-b1bb-e35ed0a061df",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Solder Sucker — Desoldering Pump",
+      "description": "Spring-loaded aluminium desoldering pump with replacement tip",
+      "price": 7.99,
+      "stock": 35,
+      "sku": "SOLD-PUMP-AL",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "8820ad25-b619-4ff0-8e49-3613a4b12806",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Soldering Iron Tips — Conical (3 pcs)",
+      "description": "Hakko-compatible 900M conical soldering iron tips, 3-pack",
+      "price": 8.99,
+      "stock": 30,
+      "sku": "SOLD-TIP-CONICAL-3PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "a9245a79-ad92-4793-8355-a8c6ee9ad967",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Soldering Iron Tips — Chisel (3 pcs)",
+      "description": "Hakko-compatible 900M chisel tips, 3-pack",
+      "price": 8.99,
+      "stock": 30,
+      "sku": "SOLD-TIP-CHISEL-3PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "8d2532c5-9e63-412b-be9d-7fdb8b5bb20b",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Tip Tinner & Activator 20g",
+      "description": "Tip tinner paste restores oxidised iron tips instantly",
+      "price": 5.99,
+      "stock": 50,
+      "sku": "SOLD-TIPTINNER-20G",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "b4fbb1a9-8e77-4413-9a3d-fb27da66c1d7",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Brass Tip Cleaner with Holder",
+      "description": "Coiled brass wire tip cleaner with weighted metal base",
+      "price": 7.99,
+      "stock": 40,
+      "sku": "SOLD-BRASSCLEAN",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "660cd8a7-39ad-4ca1-99fd-757e38c1fa25",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "Helping Hands with Magnifier",
+      "description": "Alligator clip helping hands, 60mm magnifying glass, weighted",
+      "price": 12.99,
+      "stock": 25,
+      "sku": "SOLD-HELPINGHANDS",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "3a15c9b9-ad2d-4c1b-a058-cdadedcd4ff9",
+      "category_id": "351c4557-5917-41e7-84c6-8838c3e15a9a",
+      "name": "PCB Holder & Work Clamp",
+      "description": "Adjustable PCB vice holder, rotating 360 degrees",
+      "price": 16.99,
+      "stock": 20,
+      "sku": "SOLD-PCBHOLDER",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "270887a3-2eee-436a-8da4-56d00ae8d418",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "Digital Multimeter — Auto-Range",
+      "description": "Auto-ranging DMM, DC/AC V/A, resistance, diode, continuity",
+      "price": 29.99,
+      "stock": 20,
+      "sku": "MEAS-DMM-AUTO",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "829fce66-e4b8-426a-bbaf-2e5ac98f56b4",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "Multimeter Test Lead Set",
+      "description": "CAT III 600V test leads with alligator and hook clips",
+      "price": 8.99,
+      "stock": 35,
+      "sku": "MEAS-LEADS-SET",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "a36c6e3f-9371-4a52-a2a2-39e0911c6715",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "Logic Probe — TTL & CMOS",
+      "description": "Active logic probe, pulse, high/low indicator, TTL and CMOS",
+      "price": 9.99,
+      "stock": 25,
+      "sku": "MEAS-LOGICPROBE",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "e111b578-8bb6-4cab-8661-d745ccd52e4b",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "SMD Component Tester",
+      "description": "Transistor, capacitor, resistor, diode tester, graphical LCD",
+      "price": 24.99,
+      "stock": 15,
+      "sku": "MEAS-SMDTESTER",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "0a6815fd-7e97-4dbf-b2eb-243a3c452894",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "Bench Power Supply — 0-30V 5A",
+      "description": "Variable regulated bench PSU, dual digital display",
+      "price": 89.99,
+      "stock": 8,
+      "sku": "MEAS-PSU-30V5A",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "925ba2e0-a42d-4a68-b962-c5aaa9ae0155",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "USB Digital Oscilloscope — 20MHz",
+      "description": "2-channel 20MHz USB oscilloscope with PC software",
+      "price": 49.99,
+      "stock": 10,
+      "sku": "MEAS-OSCOPE-20MHZ",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "fd368895-cb0a-480d-a237-425d99ce0a88",
+      "category_id": "95fe9e5b-c801-49f2-8aa8-28e1e0c23ba4",
+      "name": "Clip-on Test Hook Set (8 pcs)",
+      "description": "SMD IC test hook clips, 8 assorted colours",
+      "price": 9.99,
+      "stock": 30,
+      "sku": "MEAS-TESTHOOK-8PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "68149f3a-ae80-41fd-ab6f-fb72c3d1b357",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Adjustable Spanner 200mm",
+      "description": "200mm chrome vanadium adjustable wrench, 25mm jaw capacity",
+      "price": 12.99,
+      "stock": 25,
+      "sku": "TL-SPAN-200",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "a259fa69-b3da-4c33-9db1-303933609ba1",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Combination Spanner Set (8 pcs)",
+      "description": "8–19mm combination spanner set, drop-forged chrome vanadium",
+      "price": 19.99,
+      "stock": 20,
+      "sku": "TL-SPAN-COMBO-8PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "f35c4902-f37e-4bf3-bb8e-cc5521e13c2c",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Long-Nose Pliers 160mm",
+      "description": "160mm long-nose pliers, chrome vanadium, comfort grip",
+      "price": 9.99,
+      "stock": 30,
+      "sku": "TL-PLIERS-LN-160",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "e51065b1-5b10-4744-8af4-04fe9d33195d",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Flush Cutter / Side Cutter",
+      "description": "Micro flush cutter for component leads, PCB, and soft wire",
+      "price": 8.99,
+      "stock": 35,
+      "sku": "TL-FLUSH-CUTTER",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "32e2b17d-e5de-412c-8164-771d3052140f",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Anti-Static Tweezers Set (6 pcs)",
+      "description": "ESD-safe stainless steel tweezer set, straight and curved",
+      "price": 10.99,
+      "stock": 30,
+      "sku": "TL-TWEEZERS-ESD-6PK",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "68aa9c7a-ec83-45bb-9c74-64b4edf1c8c6",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Wire Stripper & Crimper",
+      "description": "22–10 AWG automatic wire stripper, cutter, and crimper combo",
+      "price": 14.99,
+      "stock": 20,
+      "sku": "TL-WIRESTRIP-AWG",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    },
+    {
+      "id": "391c8171-831c-4eef-bcc3-9e68603d2887",
+      "category_id": "11dc4904-f9ce-4e64-ad81-a1eb6261b9e8",
+      "name": "Stanley Knife with 5 Blades",
+      "description": "Retractable utility knife with 5 spare blades",
+      "price": 6.99,
+      "stock": 40,
+      "sku": "TL-KNIFE-STD",
+      "image_url": null,
+      "active": true,
+      "featured": false,
+      "created_at": "2026-05-19T00:26:56.130Z",
+      "updated_at": "2026-05-19T00:26:56.130Z"
+    }
+  ],
+  "inventory_log": [
+    {
+      "id": "a849a991-c39d-4518-8f5e-53b01ed70136",
+      "item_id": "69232b6a-bef5-4dda-8625-5ca43beb097a",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 49,
+      "created_at": "2026-05-18T04:02:15.594Z"
+    },
+    {
+      "id": "38bb6a7e-2364-4f1d-bf6b-779f755934b7",
+      "item_id": "d3fb9d2c-9e17-4ff7-8621-da1511baf2f7",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 23,
+      "created_at": "2026-05-18T05:37:22.685Z"
+    },
+    {
+      "id": "ff061045-f08e-4f79-a268-ce3f1e9df710",
+      "item_id": "69232b6a-bef5-4dda-8625-5ca43beb097a",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 48,
+      "created_at": "2026-05-18T05:41:32.027Z"
+    },
+    {
+      "id": "96822494-4f42-40f3-b237-e1846806f03e",
+      "item_id": "52bd19a9-670a-4446-b5ff-f11112b93336",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 29,
+      "created_at": "2026-05-18T07:52:47.734Z"
+    },
+    {
+      "id": "4db9b8ed-5620-4f9c-aee9-68d162bb0a92",
+      "item_id": "d3fb9d2c-9e17-4ff7-8621-da1511baf2f7",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 22,
+      "created_at": "2026-05-18T07:52:47.734Z"
+    },
+    {
+      "id": "415af5ad-08bb-4080-9425-a0939403bc14",
+      "item_id": "2a2d1a54-e728-4b4c-ab2c-ceb5b6d1cb72",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 14,
+      "created_at": "2026-05-18T07:52:47.734Z"
+    },
+    {
+      "id": "efda38dd-2434-45e1-a48b-28b073f4707d",
+      "item_id": "1b3381dc-a5d4-45e6-b622-bbfc206f09f6",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 11,
+      "created_at": "2026-05-18T07:52:47.734Z"
+    },
+    {
+      "id": "e0865276-0079-4a2d-a8d5-31d319ae9b26",
+      "item_id": "1b3381dc-a5d4-45e6-b622-bbfc206f09f6",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 10,
+      "created_at": "2026-05-18T23:23:47.865Z"
+    },
+    {
+      "id": "fe84395d-6177-42cc-91d4-d9c102a4b672",
+      "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 29,
+      "created_at": "2026-05-20T05:46:14.420Z"
+    },
+    {
+      "id": "5ad21bf1-9514-4e49-9dc4-09721a900bb4",
+      "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 28,
+      "created_at": "2026-05-20T06:08:09.279Z"
+    },
+    {
+      "id": "1c437ad3-6490-4222-9097-fb7b6a839354",
+      "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+      "change": 5,
+      "reason": "Test restock",
+      "stock_after": 33,
+      "created_at": "2026-05-20T06:38:48.527Z"
+    },
+    {
+      "id": "d2d8a79c-4a86-4878-a27c-c30460ef6d49",
+      "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 32,
+      "created_at": "2026-05-20T06:39:22.035Z"
+    },
+    {
+      "id": "e138c97c-c1fc-4f1e-9e6e-bea5fc070e7b",
+      "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+      "change": -1,
+      "reason": "Order",
+      "stock_after": 31,
+      "created_at": "2026-05-22T08:14:57.844Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "cf90b448-af5b-4d05-b55e-ab7bcb5cfb65",
+      "order_number": "BIZ-760940",
+      "status": "cancelled",
+      "customer_name": "Test User",
+      "customer_email": "test@example.com",
+      "customer_phone": null,
+      "shipping_address": "1 Test St",
+      "shipping_city": "Testville",
+      "shipping_state": "TX",
+      "shipping_zip": "78701",
+      "shipping_country": "US",
+      "items": [
+        {
+          "item_id": "69232b6a-bef5-4dda-8625-5ca43beb097a",
+          "name": "Cable Organizer Clip",
+          "sku": "PRT-CABLE-001",
+          "price": 5.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 5.99,
+      "shipping_cost": 0,
+      "total": 5.99,
+      "notes": null,
+      "created_at": "2026-05-18T04:02:15.594Z",
+      "updated_at": "2026-05-18T07:59:10.966Z"
+    },
+    {
+      "id": "315a5447-231f-447d-ac97-cc77914f3ae5",
+      "order_number": "BIZ-790771",
+      "status": "cancelled",
+      "customer_name": "Jayden Sumner",
+      "customer_email": "j4yd3n_l33@hotmail.com",
+      "customer_phone": "+61498877784",
+      "shipping_address": "80A Sternberg Street",
+      "shipping_city": "Kennington",
+      "shipping_state": "VI",
+      "shipping_zip": "3550",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "d3fb9d2c-9e17-4ff7-8621-da1511baf2f7",
+          "name": "Hex Key Set",
+          "sku": "TL-HEX-001",
+          "price": 12.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 12.99,
+      "shipping_cost": 0,
+      "total": 12.99,
+      "notes": null,
+      "created_at": "2026-05-18T05:37:22.685Z",
+      "updated_at": "2026-05-18T05:37:46.257Z"
+    },
+    {
+      "id": "08df7d50-a059-4fef-9cee-ff3cadf54114",
+      "order_number": "BIZ-400352",
+      "status": "cancelled",
+      "customer_name": "Jayden Sumner",
+      "customer_email": "j4yd3n_l33@hotmail.com",
+      "customer_phone": "+61498877784",
+      "shipping_address": "80A Sternberg Street",
+      "shipping_city": "Kennington",
+      "shipping_state": "VIC",
+      "shipping_zip": "3550",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "69232b6a-bef5-4dda-8625-5ca43beb097a",
+          "name": "Cable Organizer Clip",
+          "sku": "PRT-CABLE-001",
+          "price": 5.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 5.99,
+      "shipping_cost": 0,
+      "total": 5.99,
+      "notes": null,
+      "created_at": "2026-05-18T05:41:32.027Z",
+      "updated_at": "2026-05-18T07:51:02.025Z"
+    },
+    {
+      "id": "a4c86eff-797e-4f97-ad19-947f42c410ee",
+      "order_number": "BIZ-542177",
+      "status": "processing",
+      "customer_name": "Jayden Sumner",
+      "customer_email": "j4yd3n_l33@hotmail.com",
+      "customer_phone": "+61498877784",
+      "shipping_address": "80A Sternberg Street",
+      "shipping_city": "Kennington",
+      "shipping_state": "VIC",
+      "shipping_zip": "3550",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "52bd19a9-670a-4446-b5ff-f11112b93336",
+          "name": "M3 Bolt Assortment",
+          "sku": "HW-M3-001",
+          "price": 8.99,
+          "qty": 1
+        },
+        {
+          "item_id": "d3fb9d2c-9e17-4ff7-8621-da1511baf2f7",
+          "name": "Hex Key Set",
+          "sku": "TL-HEX-001",
+          "price": 12.99,
+          "qty": 1
+        },
+        {
+          "item_id": "2a2d1a54-e728-4b4c-ab2c-ceb5b6d1cb72",
+          "name": "Precision Screwdriver Kit",
+          "sku": "TL-SCREW-001",
+          "price": 18.5,
+          "qty": 1
+        },
+        {
+          "item_id": "1b3381dc-a5d4-45e6-b622-bbfc206f09f6",
+          "name": "Filament Spool Holder",
+          "sku": "PRT-SPOOL-001",
+          "price": 9.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 50.47,
+      "shipping_cost": 0,
+      "total": 50.47,
+      "notes": null,
+      "created_at": "2026-05-18T07:52:47.734Z",
+      "updated_at": "2026-05-18T07:55:02.958Z"
+    },
+    {
+      "id": "f045ed77-d8b7-4bde-8e99-b01847830dc5",
+      "order_number": "BIZ-649984",
+      "status": "processing",
+      "customer_name": "Jayden Sumner",
+      "customer_email": "j4yd3n_l33@hotmail.com",
+      "customer_phone": "+61498877784",
+      "shipping_address": "80A Sternberg Street",
+      "shipping_city": "Kennington",
+      "shipping_state": "VIC",
+      "shipping_zip": "3550",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "1b3381dc-a5d4-45e6-b622-bbfc206f09f6",
+          "name": "Filament Spool Holder",
+          "sku": "PRT-SPOOL-001",
+          "price": 9.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 9.99,
+      "gst": 1,
+      "shipping_cost": 0,
+      "total": 10.99,
+      "notes": null,
+      "admin_notes": null,
+      "created_at": "2026-05-18T23:23:47.866Z",
+      "updated_at": "2026-05-18T23:24:54.073Z"
+    },
+    {
+      "id": "c836fc69-5f54-4b50-a0af-9cf2295cc1d9",
+      "order_number": "BIZ-341868",
+      "status": "cancelled",
+      "customer_name": "Test Customer",
+      "customer_email": "test@example.com",
+      "customer_phone": "0400000000",
+      "shipping_address": "1 Test St",
+      "shipping_city": "Sydney",
+      "shipping_state": "NSW",
+      "shipping_zip": "2000",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+          "name": "1/2W Resistor Kit (300 pcs)",
+          "sku": "RES-KIT-HALF-300",
+          "price": 9.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 9.99,
+      "gst": 1,
+      "shipping_cost": 9.95,
+      "total": 20.94,
+      "notes": null,
+      "admin_notes": null,
+      "created_at": "2026-05-20T05:46:14.420Z",
+      "updated_at": "2026-05-21T07:47:50.455Z"
+    },
+    {
+      "id": "29bc4ce2-e01e-4c36-b657-db0388353336",
+      "order_number": "BIZ-320513",
+      "status": "processing",
+      "customer_name": "Jane Test",
+      "customer_email": "jane@test.com",
+      "customer_phone": "0411111111",
+      "shipping_address": "5 Test Ave",
+      "shipping_city": "Melbourne",
+      "shipping_state": "VIC",
+      "shipping_zip": "3000",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+          "name": "1/2W Resistor Kit (300 pcs)",
+          "sku": "RES-KIT-HALF-300",
+          "price": 9.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 9.99,
+      "gst": 1,
+      "shipping_cost": 9.95,
+      "total": 20.94,
+      "notes": null,
+      "admin_notes": null,
+      "created_at": "2026-05-20T06:08:09.279Z",
+      "updated_at": "2026-05-20T22:04:13.810Z"
+    },
+    {
+      "id": "0ebd69c7-69f5-4ed3-85ff-98e5f7519088",
+      "order_number": "BIZ-585987",
+      "status": "delivered",
+      "customer_name": "Alice Test",
+      "customer_email": "alice@example.com",
+      "customer_phone": "0422222222",
+      "shipping_address": "10 High St",
+      "shipping_city": "Brisbane",
+      "shipping_state": "QLD",
+      "shipping_zip": "4000",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+          "name": "1/2W Resistor Kit (300 pcs)",
+          "sku": "RES-KIT-HALF-300",
+          "price": 9.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 9.99,
+      "gst": 1,
+      "shipping_cost": 12.95,
+      "total": 23.94,
+      "notes": null,
+      "admin_notes": "VIP customer",
+      "created_at": "2026-05-20T06:39:22.035Z",
+      "updated_at": "2026-05-21T07:48:06.513Z",
+      "tracking_number": "AP999888777AU"
+    },
+    {
+      "id": "90c43449-5d79-430c-8950-889ef0dcbbaa",
+      "order_number": "BIZ-720702",
+      "status": "delivered",
+      "customer_name": "Jayden Jayden",
+      "customer_email": "jayden.l.sumner@gmail.com",
+      "customer_phone": "0498877784",
+      "shipping_address": "80A Sternberg Street",
+      "shipping_city": "Kennington",
+      "shipping_state": "VIC",
+      "shipping_zip": "3550",
+      "shipping_country": "AU",
+      "items": [
+        {
+          "item_id": "91ddad2e-6f06-455e-aa6e-839f7a7c427a",
+          "name": "1/2W Resistor Kit (300 pcs)",
+          "sku": "RES-KIT-HALF-300",
+          "price": 9.99,
+          "qty": 1
+        }
+      ],
+      "subtotal": 9.99,
+      "gst": 1,
+      "shipping_cost": 9.95,
+      "total": 20.94,
+      "notes": null,
+      "admin_notes": null,
+      "created_at": "2026-05-22T08:14:57.884Z",
+      "updated_at": "2026-05-22T08:16:08.702Z"
+    }
+  ],
+  "settings": {
+    "store_name": "BIZ Shop",
+    "tagline": "Tools & 3D Printed Parts · Australia",
+    "abn": "",
+    "contact_email": "sales@apolloindustries.com.au",
+    "contact_phone": "0498877784",
+    "address": "80A Sternberg Street, Kennington VIC 3550, AU",
+    "website": "www.apollo-industries.com.au",
+    "instagram": "",
+    "facebook": "",
+    "low_stock_threshold": "5",
+    "alert_email": "",
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": "587",
+    "smtp_user": "jayden.l.sumner@gmail.com",
+    "smtp_pass": "Treadstone71!",
+    "shipping_mode": "flat",
+    "shipping_flat_rate": "9.95",
+    "shipping_free_threshold": "100",
+    "shipping_NSW": "9.95",
+    "shipping_VIC": "9.95",
+    "shipping_QLD": "12.95",
+    "shipping_SA": "12.95",
+    "shipping_WA": "14.95",
+    "shipping_TAS": "12.95",
+    "shipping_ACT": "9.95",
+    "shipping_NT": "14.95"
+  },
+  "activity_log": [
+    {
+      "id": "2d27c844-dfc5-4dde-a5b7-8a4590641e09",
+      "type": "item",
+      "message": "Item updated: \"10uF Tantalum Capacitor (Pack of 10)\"",
+      "created_at": "2026-05-25T22:13:20.916Z"
+    },
+    {
+      "id": "953b0fef-c009-4dd0-81ef-3a7940e7e9f9",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-25T22:10:36.476Z"
+    },
+    {
+      "id": "b205ff00-b2b8-432a-ad8f-e1589a54f3ba",
+      "type": "settings",
+      "message": "Settings updated: store_name, tagline, abn, contact_email, contact_phone, address, website, instagram, facebook, low_stock_threshold, alert_email, smtp_host, smtp_port, smtp_user, smtp_pass, shipping_mode, shipping_flat_rate, shipping_free_threshold, shipping_NSW, shipping_VIC, shipping_QLD, shipping_SA, shipping_WA, shipping_TAS, shipping_ACT, shipping_NT",
+      "created_at": "2026-05-23T10:19:15.402Z"
+    },
+    {
+      "id": "3d08eef7-5e89-46e2-bdda-d5113168802d",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-23T10:17:36.674Z"
+    },
+    {
+      "id": "0600347a-2d1a-4954-8d8d-1b3e7766f9dd",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-23T10:16:36.111Z"
+    },
+    {
+      "id": "6dd50d9c-514f-4c2c-8216-cf3b6b70b39c",
+      "type": "settings",
+      "message": "Database restored from backup file",
+      "created_at": "2026-05-22T08:17:32.236Z"
+    },
+    {
+      "id": "c6cc1f06-1794-4b13-8b22-fcc1e9548289",
+      "type": "order",
+      "message": "Order BIZ-720702 status → delivered",
+      "created_at": "2026-05-22T08:16:08.703Z"
+    },
+    {
+      "id": "352df0dd-2876-4ce5-92da-6d0d9b7c2974",
+      "type": "order",
+      "message": "Order BIZ-720702 status → processing",
+      "created_at": "2026-05-22T08:15:40.480Z"
+    },
+    {
+      "id": "3584a22a-3ffa-4f52-8148-36e2d724acd1",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-22T08:15:21.405Z"
+    },
+    {
+      "id": "f52d9e55-36c1-4ce1-9a6a-44297ee75293",
+      "type": "order",
+      "message": "Order BIZ-720702 placed by Jayden Jayden — A$20.94",
+      "created_at": "2026-05-22T08:14:57.890Z"
+    },
+    {
+      "id": "f89f9f60-ffbc-4f40-9300-439e3b475244",
+      "type": "order",
+      "message": "Tracking number set for BIZ-585987: AP999888777AU",
+      "created_at": "2026-05-21T07:48:06.514Z"
+    },
+    {
+      "id": "07ccc059-6166-4b2e-8df6-a6e72a00c0da",
+      "type": "order",
+      "message": "Order BIZ-585987 status → delivered",
+      "created_at": "2026-05-21T07:48:05.036Z"
+    },
+    {
+      "id": "dbbedfa9-2f2f-4508-8bc3-d4b1c20fe56e",
+      "type": "order",
+      "message": "Order BIZ-341868 status → cancelled",
+      "created_at": "2026-05-21T07:47:50.455Z"
+    },
+    {
+      "id": "1e198120-c044-4917-ab69-8279710f247b",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-21T07:47:42.120Z"
+    },
+    {
+      "id": "b7b51958-c636-415a-8e14-fff6a22c92cd",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T22:49:13.031Z"
+    },
+    {
+      "id": "80206126-2e00-4d68-9581-7d99d301b85c",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T22:42:47.392Z"
+    },
+    {
+      "id": "ae831e43-f891-415f-aab3-341b1385f9a7",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T22:29:05.737Z"
+    },
+    {
+      "id": "d9cf8065-84bd-4c8a-bb9f-e66ee10fdd2d",
+      "type": "settings",
+      "message": "Settings updated: store_name, tagline, abn, contact_email, contact_phone, address, website, instagram, facebook, low_stock_threshold, alert_email, smtp_host, smtp_port, smtp_user, smtp_pass, shipping_mode, shipping_flat_rate, shipping_free_threshold, shipping_NSW, shipping_VIC, shipping_QLD, shipping_SA, shipping_WA, shipping_TAS, shipping_ACT, shipping_NT",
+      "created_at": "2026-05-20T22:05:25.021Z"
+    },
+    {
+      "id": "513fbc4f-2950-44a3-9927-ea5adf987a64",
+      "type": "order",
+      "message": "Order BIZ-320513 status → processing",
+      "created_at": "2026-05-20T22:04:13.810Z"
+    },
+    {
+      "id": "167b7598-360b-4cf7-8faa-62656279f14b",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T22:03:56.128Z"
+    },
+    {
+      "id": "470b361c-6028-4bbf-998d-8151be6719fd",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:43:27.927Z"
+    },
+    {
+      "id": "4d30c25f-4552-4792-bfaf-65fcdcf7bf04",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:42:50.716Z"
+    },
+    {
+      "id": "fffdfe46-3166-4e2b-accb-54b7f9749da3",
+      "type": "settings",
+      "message": "Settings updated: store_name",
+      "created_at": "2026-05-20T06:39:22.160Z"
+    },
+    {
+      "id": "c364e7e8-a238-477b-a85d-f55ccfa1344b",
+      "type": "settings",
+      "message": "Settings updated: store_name",
+      "created_at": "2026-05-20T06:39:22.150Z"
+    },
+    {
+      "id": "bd6f3cbb-c5b7-4c2a-b935-ae93ec3e803a",
+      "type": "order",
+      "message": "Tracking number set for BIZ-585987: AP999888777AU",
+      "created_at": "2026-05-20T06:39:22.078Z"
+    },
+    {
+      "id": "31b3cd6e-ad39-4a77-8814-db8042dd7a37",
+      "type": "order",
+      "message": "Order BIZ-585987 status → shipped",
+      "created_at": "2026-05-20T06:39:22.067Z"
+    },
+    {
+      "id": "b5cc5839-f4d7-4457-bd7d-59938c08fb9b",
+      "type": "order",
+      "message": "Order BIZ-585987 status → processing",
+      "created_at": "2026-05-20T06:39:22.056Z"
+    },
+    {
+      "id": "0bfbef0a-0005-4376-9e85-35fe59ff7a05",
+      "type": "order",
+      "message": "Order BIZ-585987 placed by Alice Test — A$23.94",
+      "created_at": "2026-05-20T06:39:22.036Z"
+    },
+    {
+      "id": "94bab42b-5c81-4ef1-87cd-5785b8e238f9",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:39:21.914Z"
+    },
+    {
+      "id": "f03ba69d-e06e-4a2a-8bd6-67b1d70bd3ee",
+      "type": "category",
+      "message": "Category deleted: \"Test Category Updated\"",
+      "created_at": "2026-05-20T06:38:48.622Z"
+    },
+    {
+      "id": "3c3c89fd-9143-4db2-be1b-3855fec2872b",
+      "type": "category",
+      "message": "Category updated: \"Test Category Updated\"",
+      "created_at": "2026-05-20T06:38:48.605Z"
+    },
+    {
+      "id": "30bbd101-2742-49c4-9215-4e7c149b3c28",
+      "type": "category",
+      "message": "Category created: \"Test Category\"",
+      "created_at": "2026-05-20T06:38:48.588Z"
+    },
+    {
+      "id": "b1414692-03f5-4a00-8f2b-591ad91b902b",
+      "type": "inventory",
+      "message": "Stock adjusted: \"1/2W Resistor Kit (300 pcs)\" +5 → 33 units (Test restock)",
+      "created_at": "2026-05-20T06:38:48.528Z"
+    },
+    {
+      "id": "c7d84c07-e80f-40ee-88a4-96b8bf56b556",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:38:47.778Z"
+    },
+    {
+      "id": "99689583-98e3-4da8-80e4-387777f1b7c9",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:24:04.919Z"
+    },
+    {
+      "id": "ecf28385-7e5d-4dc5-80bc-c7b25500fcc7",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:22:09.069Z"
+    },
+    {
+      "id": "552ceaf2-311e-406d-9579-714832ea7c8e",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:21:06.833Z"
+    },
+    {
+      "id": "491c193f-7bcf-4b39-af11-8b20bacf964d",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:19:59.826Z"
+    },
+    {
+      "id": "4d789a7c-915f-4dcf-b7e3-a6ce2f8cf243",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:18:13.971Z"
+    },
+    {
+      "id": "3af2c4f4-3d44-41e1-8780-1fc87b615f66",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:18:07.880Z"
+    },
+    {
+      "id": "2dbd0e99-de0a-459e-ab34-09247a0e756b",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:17:49.543Z"
+    },
+    {
+      "id": "384d9c5e-a1f7-4708-bfb1-f6db4cf4369c",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:17:37.753Z"
+    },
+    {
+      "id": "eee40b68-b27b-4209-8101-13576208e6fd",
+      "type": "order",
+      "message": "Order BIZ-320513 placed by Jane Test — A$20.94",
+      "created_at": "2026-05-20T06:08:09.280Z"
+    },
+    {
+      "id": "1ae736b3-4ddd-494a-b79a-406dda0b7d1b",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T06:08:09.054Z"
+    },
+    {
+      "id": "52fac401-6b33-4da1-88cc-56a064102ee2",
+      "type": "order",
+      "message": "Order BIZ-341868 placed by Test Customer — A$20.94",
+      "created_at": "2026-05-20T05:46:14.421Z"
+    },
+    {
+      "id": "746a6dc7-49a2-4261-bf75-f732dffc175f",
+      "type": "auth",
+      "message": "Admin signed in",
+      "created_at": "2026-05-20T05:29:30.430Z"
+    }
+  ]
+}

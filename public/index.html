@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIZShop — Tools &amp; 3D Printed Parts</title>
+
+  <!-- SEO meta tags — updated dynamically by the SPA router -->
+  <meta name="description" id="metaDesc" content="BIZShop — Quality tools, electronics, and 3D printed parts for Australian makers and workshops.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" id="canonicalTag" href="">
+
+  <!-- Open Graph — for sharing on socials -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BIZShop">
+  <meta property="og:title" id="ogTitle" content="BIZShop — Tools &amp; 3D Printed Parts">
+  <meta property="og:description" id="ogDesc" content="Quality tools, electronics, and 3D printed parts for Australian makers and workshops.">
+  <meta property="og:url" id="ogUrl" content="">
+  <meta property="og:image" id="ogImage" content="">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" id="twTitle" content="BIZShop">
+  <meta name="twitter:description" id="twDesc" content="">
+  <meta name="twitter:image" id="twImage" content="">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<!-- sticky header — always visible regardless of which page you're on -->
+<header class="store-header">
+  <div class="header-logo" data-link href="/">
+    <div class="logo-box">🔧</div>
+    BIZ<em>Shop</em>
+  </div>
+
+  <nav class="store-nav" id="mainNav">
+    <a href="/"        data-link data-nav="/">Home</a>
+    <a href="/shop"    data-link data-nav="/shop">Shop</a>
+    <a href="/about"   data-link data-nav="/about">About</a>
+    <a href="/contact" data-link data-nav="/contact">Contact</a>
+    <a href="/track"   data-link data-nav="/track">Track Order</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="search-wrap">
+      <div class="header-search">
+        <input type="text" id="globalSearch" placeholder="Search products…" autocomplete="off" spellcheck="false">
+        <button id="globalSearchBtn">Search</button>
+      </div>
+      <div class="search-dropdown" id="searchDropdown"></div>
+    </div>
+    <button class="cart-btn" data-link href="/cart">
+      🛒 Cart <span class="cart-badge" id="cartBadge">0</span>
+    </button>
+    <button class="mob-menu-btn" id="mobMenuBtn" aria-label="Toggle menu" onclick="toggleMobileMenu()">☰</button>
+  </div>
+</header>
+
+<!-- the SPA swaps content in here on each navigation -->
+<div id="app"></div>
+
+<!-- footer — always visible, links to main sections -->
+<footer class="store-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">🔧 BIZ<em>Shop</em></div>
+      <p>Quality hand tools, custom 3D printed parts, and hardware for makers, builders, and tinkerers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="/shop" data-link>All Products</a>
+      <a href="/cart" data-link>My Cart</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="/about"   data-link>About Us</a>
+      <a href="/contact" data-link>Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Orders</h4>
+      <a href="/track" data-link>Track Order</a>
+    </div>
+  </div>
+  <div class="footer-bottom">&copy; 2026 BIZShop. All rights reserved.</div>
+</footer>
+
+<div class="toast-container" id="toastContainer"></div>
+<script src="/js/app.js"></script>
+</body>
+</html>

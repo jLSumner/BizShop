@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BIZ Admin Panel</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="admin-body">
+<div class="admin-shell">
+
+  <!-- sidebar — nav links, pending badge, sign out button -->
+  <aside class="admin-sidebar">
+    <div class="admin-sidebar-logo">
+      <div class="logo-icon">🔧</div>
+      BIZ<span>Admin</span>
+    </div>
+
+    <nav class="admin-nav">
+      <div class="admin-nav-label">Menu</div>
+      <a href="#" onclick="return showSection('dashboard')" id="nav-dashboard" class="active">
+        <span class="nav-icon">📊</span> Dashboard
+      </a>
+      <a href="#" onclick="return showSection('categories')" id="nav-categories">
+        <span class="nav-icon">🗂️</span> Categories
+      </a>
+      <a href="#" onclick="return showSection('items')" id="nav-items">
+        <span class="nav-icon">📦</span> Items
+      </a>
+      <a href="#" onclick="return showSection('inventory')" id="nav-inventory">
+        <span class="nav-icon">🔢</span> Inventory
+      </a>
+      <a href="#" onclick="return showSection('orders')" id="nav-orders">
+        <span class="nav-icon">🛒</span> Orders
+        <span id="pendingBadge" style="display:none;margin-left:auto;background:var(--accent);color:#fff;font-size:.65rem;font-weight:800;border-radius:20px;padding:.05rem .45rem;"></span>
+      </a>
+      <a href="#" onclick="return showSection('customers')" id="nav-customers">
+        <span class="nav-icon">👥</span> Customers
+      </a>
+      <a href="#" onclick="return showSection('activity')" id="nav-activity">
+        <span class="nav-icon">📋</span> Activity Log
+      </a>
+      <div style="height:1px;background:var(--border);margin:.5rem .75rem;opacity:.5;"></div>
+      <a href="#" onclick="return showSection('settings')" id="nav-settings">
+        <span class="nav-icon">⚙️</span> Settings
+      </a>
+    </nav>
+
+    <div class="admin-sidebar-footer">
+      <a href="/" target="_blank">↗ View Store</a>
+      <form method="POST" action="/admin/logout" style="margin:0;">
+        <button type="submit">⎋ Sign Out</button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- main content area — only one section is active at a time -->
+  <div class="admin-content">
+    <div class="admin-topbar">
+      <span class="page-title" id="topbarTitle">Dashboard</span>
+    </div>
+
+    <main class="admin-main">
+
+      <!-- dashboard — stat cards, charts, and low stock table -->
+      <section id="section-dashboard" class="admin-section active">
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-icon">📦</div>
+            <div class="stat-label">Active Items</div>
+            <div class="stat-value" id="statItems">—</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🗂️</div>
+            <div class="stat-label">Categories</div>
+            <div class="stat-value" id="statCats">—</div>
+          </div>
+          <div class="stat-card accent-green">
+            <div class="stat-icon">🛒</div>
+            <div class="stat-label">Total Orders</div>
+            <div class="stat-value" id="statOrders">—</div>
+          </div>
+          <div class="stat-card accent-amber">
+            <div class="stat-icon">⏳</div>
+            <div class="stat-label">Pending Orders</div>
+            <div class="stat-value" id="statPending">—</div>
+          </div>
+          <div class="stat-card accent-green">
+            <div class="stat-icon">💰</div>
+            <div class="stat-label">Revenue</div>
+            <div class="stat-value" id="statRevenue">—</div>
+          </div>
+        </div>
+
+        <!-- revenue trend bar chart -->
+        <div class="chart-card">
+          <div class="chart-card-header">
+            <h2>Revenue — Last 30 Days</h2>
+          </div>
+          <div class="chart-wrap"><canvas id="chartRevenue"></canvas></div>
+        </div>
+
+        <!-- order status doughnut and top products bar chart -->
+        <div class="charts-row">
+          <div class="chart-card">
+            <div class="chart-card-header"><h2>Orders by Status</h2></div>
+            <div class="chart-wrap chart-wrap-doughnut"><canvas id="chartStatus"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <div class="chart-card-header"><h2>Top Products by Revenue</h2></div>
+            <div class="chart-wrap"><canvas id="chartTopProducts"></canvas></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h2>⚠️ Low Stock Alert <span style="font-weight:400;color:#94a3b8;font-size:.8rem;">(5 units or fewer)</span></h2>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Item</th><th>Category</th><th>Stock</th><th>SKU</th></tr>
+              </thead>
+              <tbody id="lowStockTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- categories section -->
+      <section id="section-categories" class="admin-section">
+        <div class="card">
+          <div class="card-header">
+            <h2>Categories</h2>
+            <button class="btn btn-primary" onclick="openCatModal()">+ New Category</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Name</th><th>Slug</th><th>Description</th><th>Items</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="catTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- items/products section -->
+      <section id="section-items" class="admin-section">
+        <div class="card">
+          <div class="card-header">
+            <h2>Items</h2>
+            <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;">
+              <input type="search" id="itemSearch" class="filter-select" placeholder="Search name or SKU…" oninput="itemsPage=1;renderItemTable()" style="min-width:160px;">
+              <select id="itemFilterCat" onchange="loadItems()" class="filter-select">
+                <option value="">All Categories</option>
+              </select>
+              <select id="itemFilterActive" onchange="loadItems()" class="filter-select">
+                <option value="">Active only</option>
+                <option value="all">All (incl. hidden)</option>
+              </select>
+              <select class="filter-select" style="width:auto;" onchange="setItemsPerPage(this.value)">
+                <option value="25">25 per page</option>
+                <option value="50">50 per page</option>
+                <option value="100">100 per page</option>
+              </select>
+              <button class="btn btn-secondary" onclick="openImportModal()">↑ Import CSV</button>
+              <button class="btn btn-primary" onclick="openItemModal()">+ New Item</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Name</th><th>Category</th><th>Price</th><th>Stock</th><th>SKU</th><th>Status</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="itemTable"></tbody>
+            </table>
+          </div>
+          <div id="itemsPagination" style="padding:.5rem 1rem 1rem;"></div>
+        </div>
+      </section>
+
+      <!-- inventory section — stock adjustments and history -->
+      <section id="section-inventory" class="admin-section">
+        <div class="card">
+          <div class="card-header">
+            <h2>Adjust Inventory</h2>
+            <select id="invItemSelect" class="filter-select" style="min-width:240px;">
+              <option value="">Select an item…</option>
+            </select>
+          </div>
+
+          <div id="invPanel" style="display:none;">
+            <div class="inv-controls">
+              <div class="form-group" style="margin:0;">
+                <label>Adjustment (+/-)</label>
+                <input type="number" id="invChange" placeholder="e.g. 10 or -3">
+              </div>
+              <div class="form-group" style="margin:0;">
+                <label>Reason <span style="color:#94a3b8;font-weight:400">(optional)</span></label>
+                <input type="text" id="invReason" placeholder="e.g. Received shipment">
+              </div>
+              <div style="padding-bottom:1px;">
+                <button class="btn btn-success" onclick="applyInventory()">Apply</button>
+              </div>
+            </div>
+
+            <div class="inv-stock-display">
+              <div class="inv-stock-chip">
+                <div class="chip-label">Current Stock</div>
+                <div class="chip-value" id="invCurrentStock">—</div>
+              </div>
+            </div>
+
+            <div class="card-header" style="border-top:1px solid var(--border);">
+              <h2>Adjustment Log</h2>
+            </div>
+            <div class="table-wrap">
+              <table class="log-table">
+                <thead>
+                  <tr><th>Date &amp; Time</th><th>Change</th><th>Stock After</th><th>Reason</th></tr>
+                </thead>
+                <tbody id="invLogTable"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- orders section — filterable by status, opens detail modal on click -->
+      <section id="section-orders" class="admin-section">
+        <div class="card">
+          <div class="card-header">
+            <h2>Orders</h2>
+            <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;">
+              <div class="order-status-tabs" id="orderStatusTabs">
+              <button class="status-tab active" data-status="">All</button>
+              <button class="status-tab" data-status="pending">Pending</button>
+              <button class="status-tab" data-status="processing">Processing</button>
+              <button class="status-tab" data-status="shipped">Shipped</button>
+              <button class="status-tab" data-status="delivered">Delivered</button>
+              <button class="status-tab" data-status="cancelled">Cancelled</button>
+              <button class="status-tab" data-status="return_requested">Returns</button>
+              <button class="status-tab" data-status="refunded">Refunded</button>
+            </div>
+              <div style="display:flex;align-items:center;gap:.4rem;flex-wrap:wrap;">
+                <select class="filter-select" style="width:auto;" onchange="setOrdersPerPage(this.value)">
+                  <option value="25">25 per page</option>
+                  <option value="50">50 per page</option>
+                  <option value="100">100 per page</option>
+                </select>
+                <input type="date" id="exportDateFrom" class="filter-select" style="padding:.3rem .5rem;font-size:.78rem;" title="From date">
+                <span style="font-size:.75rem;color:var(--muted)">→</span>
+                <input type="date" id="exportDateTo" class="filter-select" style="padding:.3rem .5rem;font-size:.78rem;" title="To date">
+                <button class="btn btn-secondary btn-sm" onclick="exportOrdersCSV()" title="Export orders to CSV">⬇ Export CSV</button>
+              </div>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>#</th><th>Customer</th><th>Date</th><th>Items</th><th>Total</th><th>Status</th><th>Actions</th></tr>
+              </thead>
+              <tbody id="orderTable"></tbody>
+            </table>
+          </div>
+          <div id="ordersPagination" style="padding:.5rem 1rem 1rem;"></div>
+        </div>
+      </section>
+
+      <!-- customers section — auto-built from order history, read-only -->
+      <section id="section-customers" class="admin-section">
+        <div class="card">
+          <div class="card-header" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;">
+            <h2>Customers</h2>
+            <div style="display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;">
+              <span id="custCount" style="font-size:.8rem;color:var(--muted);font-weight:500"></span>
+              <input type="text" id="custSearch" placeholder="Search name or email…"
+                     style="padding:.45rem .8rem;border:1px solid var(--border);border-radius:var(--radius-sm);font-size:.82rem;width:220px"
+                     oninput="renderCustomerList()">
+            </div>
+          </div>
+          <div style="overflow-x:auto">
+            <table>
+              <thead>
+                <tr>
+                  <th>Customer</th>
+                  <th>Phone</th>
+                  <th>State</th>
+                  <th style="text-align:center">Orders</th>
+                  <th>Total Spent</th>
+                  <th>Last Order</th>
+                </tr>
+              </thead>
+              <tbody id="custTable"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- activity log — chronological record of everything that happened -->
+      <section id="section-activity" class="admin-section">
+        <div class="card">
+          <div class="card-header" style="flex-wrap:wrap;gap:.75rem;">
+            <h2>Activity Log</h2>
+            <div style="display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;">
+              <div class="activity-filter-tabs" id="activityFilterTabs">
+                <button class="act-tab active" data-type="" onclick="setActivityFilter('')">All</button>
+                <button class="act-tab" data-type="order" onclick="setActivityFilter('order')">Orders</button>
+                <button class="act-tab" data-type="item" onclick="setActivityFilter('item')">Items</button>
+                <button class="act-tab" data-type="inventory" onclick="setActivityFilter('inventory')">Inventory</button>
+                <button class="act-tab" data-type="category" onclick="setActivityFilter('category')">Categories</button>
+                <button class="act-tab" data-type="settings" onclick="setActivityFilter('settings')">Settings</button>
+                <button class="act-tab" data-type="auth" onclick="setActivityFilter('auth')">Auth</button>
+              </div>
+              <select class="form-select" style="width:auto;font-size:.8rem;padding:.3rem .6rem;" onchange="setActivityPerPage(this.value)">
+                <option value="25">25 per page</option>
+                <option value="50">50 per page</option>
+                <option value="100">100 per page</option>
+              </select>
+              <button class="btn btn-secondary btn-sm" onclick="loadActivity()">↺ Refresh</button>
+            </div>
+          </div>
+          <div class="activity-timeline" id="activityTimeline">
+            <div class="activity-empty">Loading…</div>
+          </div>
+          <div id="activityPagination"></div>
+        </div>
+      </section>
+
+      <!-- settings section — store config, shipping, SMTP, all that good stuff -->
+      <section id="section-settings" class="admin-section">
+        <div class="card" style="max-width:640px;">
+          <div class="card-header"><h2>Store Settings</h2></div>
+          <div style="padding:1.5rem 1.6rem;display:flex;flex-direction:column;gap:1.5rem;">
+
+            <div>
+              <div class="settings-section-label">Store Identity</div>
+              <div class="form-group">
+                <label>Store Name</label>
+                <input type="text" id="set-store_name" placeholder="BIZ Shop">
+              </div>
+              <div class="form-group">
+                <label>Tagline</label>
+                <input type="text" id="set-tagline" placeholder="Tools & 3D Printed Parts · Australia">
+              </div>
+              <div class="form-group" style="margin:0">
+                <label>ABN <span style="color:var(--muted);font-weight:400">(shown on tax invoices)</span></label>
+                <input type="text" id="set-abn" placeholder="XX XXX XXX XXX">
+              </div>
+            </div>
+
+            <div>
+              <div class="settings-section-label">Contact Details</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Email</label>
+                  <input type="email" id="set-contact_email" placeholder="hello@bizshop.com.au">
+                </div>
+                <div class="form-group">
+                  <label>Phone</label>
+                  <input type="text" id="set-contact_phone" placeholder="03 XXXX XXXX">
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Street Address</label>
+                <input type="text" id="set-address" placeholder="123 Smith Street, Melbourne VIC 3000">
+              </div>
+              <div class="form-group" style="margin:0">
+                <label>Website</label>
+                <input type="text" id="set-website" placeholder="bizshop.com.au">
+              </div>
+            </div>
+
+            <div>
+              <div class="settings-section-label">Social Media</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Instagram</label>
+                  <input type="text" id="set-instagram" placeholder="@bizshop">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <label>Facebook</label>
+                  <input type="text" id="set-facebook" placeholder="facebook.com/bizshop">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="settings-section-label">Shipping</div>
+              <div class="form-group">
+                <label>Shipping Mode</label>
+                <select id="set-shipping_mode" onchange="updateShippingModeUI()">
+                  <option value="free">Always Free</option>
+                  <option value="flat">Flat Rate</option>
+                  <option value="by_state">By State / Territory</option>
+                </select>
+              </div>
+              <div id="shippingFlatField" style="display:none">
+                <div class="form-group">
+                  <label>Flat Rate (A$) <span style="color:var(--muted);font-weight:400">— fallback for by-state if state not set</span></label>
+                  <input type="number" id="set-shipping_flat_rate" min="0" step="0.01" placeholder="9.95">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <label>Free Shipping Threshold (A$) <span style="color:var(--muted);font-weight:400">— 0 = always charge</span></label>
+                  <input type="number" id="set-shipping_free_threshold" min="0" step="0.01" placeholder="0">
+                </div>
+              </div>
+              <div id="shippingByStateFields" style="display:none;margin-top:.75rem">
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem 1rem">
+                  <div class="form-group" style="margin:0"><label>NSW (A$)</label><input type="number" id="set-shipping_NSW" min="0" step="0.01" placeholder="9.95"></div>
+                  <div class="form-group" style="margin:0"><label>VIC (A$)</label><input type="number" id="set-shipping_VIC" min="0" step="0.01" placeholder="9.95"></div>
+                  <div class="form-group" style="margin:0"><label>QLD (A$)</label><input type="number" id="set-shipping_QLD" min="0" step="0.01" placeholder="12.95"></div>
+                  <div class="form-group" style="margin:0"><label>SA (A$)</label><input type="number" id="set-shipping_SA" min="0" step="0.01" placeholder="12.95"></div>
+                  <div class="form-group" style="margin:0"><label>WA (A$)</label><input type="number" id="set-shipping_WA" min="0" step="0.01" placeholder="14.95"></div>
+                  <div class="form-group" style="margin:0"><label>TAS (A$)</label><input type="number" id="set-shipping_TAS" min="0" step="0.01" placeholder="12.95"></div>
+                  <div class="form-group" style="margin:0"><label>ACT (A$)</label><input type="number" id="set-shipping_ACT" min="0" step="0.01" placeholder="9.95"></div>
+                  <div class="form-group" style="margin:0"><label>NT (A$)</label><input type="number" id="set-shipping_NT" min="0" step="0.01" placeholder="14.95"></div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="settings-section-label">Stock Alerts</div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Low Stock Threshold</label>
+                  <input type="number" id="set-low_stock_threshold" min="0" placeholder="5">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <label>Alert Email <span style="color:var(--muted);font-weight:400">(defaults to contact email)</span></label>
+                  <input type="email" id="set-alert_email" placeholder="alerts@bizshop.com.au">
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div class="settings-section-label">Email / SMTP <span style="font-weight:400;text-transform:none;letter-spacing:0;font-size:.75rem;color:var(--muted-lt)">(required for stock alerts)</span></div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>SMTP Host</label>
+                  <input type="text" id="set-smtp_host" placeholder="smtp.gmail.com">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <label>Port</label>
+                  <input type="text" id="set-smtp_port" placeholder="587">
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Username</label>
+                  <input type="text" id="set-smtp_user" placeholder="you@gmail.com">
+                </div>
+                <div class="form-group" style="margin:0">
+                  <label>Password / App Password</label>
+                  <input type="password" id="set-smtp_pass" placeholder="••••••••••••••••">
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" onclick="saveSettings()">Save Settings</button>
+          </div>
+        </div>
+
+        <div class="card" style="max-width:640px;margin-top:1.5rem;">
+          <div class="card-header"><h2>Backup &amp; Restore</h2></div>
+          <div style="padding:1.25rem 1.6rem;display:flex;flex-direction:column;gap:1.25rem;">
+            <div>
+              <div class="settings-section-label">Download Backup</div>
+              <p style="font-size:.84rem;color:var(--muted);margin-bottom:.75rem;">Downloads a complete snapshot of all products, categories, orders, and settings as a JSON file.</p>
+              <a href="/api/admin/backup" class="btn btn-secondary" download>⬇ Download Backup</a>
+            </div>
+            <hr style="border:none;border-top:1px solid var(--border);margin:0;">
+            <div>
+              <div class="settings-section-label">Restore from Backup</div>
+              <p style="font-size:.84rem;color:var(--muted);margin-bottom:.75rem;"><strong style="color:var(--danger)">Warning:</strong> Restoring will permanently replace all current data. This cannot be undone.</p>
+              <input type="file" id="restoreFileInput" accept=".json,application/json" style="display:none" onchange="handleRestoreFile(this)">
+              <button class="btn btn-danger" onclick="document.getElementById('restoreFileInput').click()">↑ Restore from Backup</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+</div>
+
+<!-- order detail modal — status, items, customer info, notes, tracking -->
+<div class="modal-overlay" id="orderModalOverlay">
+  <div class="modal modal-lg">
+    <div class="modal-header">
+      <h3 id="orderModalTitle">Order</h3>
+      <button class="modal-close" onclick="closeOrderModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="order-modal-grid" id="orderModalMeta"></div>
+      <div class="card-header" style="padding:.75rem 0;border:none;margin-top:.5rem;border-top:1px solid var(--border);">
+        <h2 style="font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);">Items</h2>
+      </div>
+      <div class="table-wrap" id="orderModalItems"></div>
+
+      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);">
+        <label style="font-size:.75rem;font-weight:700;color:var(--muted);display:block;margin-bottom:.4rem;">🔒 Internal Notes <span style="font-weight:400">(admin only)</span></label>
+        <textarea id="orderAdminNotes" rows="2" style="width:100%;padding:.55rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;font-size:.82rem;resize:vertical;outline:none;transition:border-color .15s;" placeholder="e.g. Customer called re: delivery, left at door…" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)';saveAdminNotes()"></textarea>
+      </div>
+
+      <div style="margin-top:.75rem;padding-top:.75rem;border-top:1px solid var(--border);">
+        <label style="font-size:.75rem;font-weight:700;color:var(--muted);display:block;margin-bottom:.4rem;">📦 Tracking Number</label>
+        <div style="display:flex;gap:.5rem;">
+          <input type="text" id="orderTrackingNumber" placeholder="e.g. EH123456789AU" style="flex:1;padding:.5rem .75rem;border:1.5px solid var(--border);border-radius:var(--radius-sm);font:inherit;font-size:.875rem;outline:none;transition:border-color .15s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+          <button class="btn btn-secondary btn-sm" onclick="saveTrackingNumber()">Save</button>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:.75rem;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);flex-wrap:wrap;">
+        <div style="display:flex;gap:.5rem;">
+          <button class="btn btn-secondary btn-sm" onclick="printPackingSlip()">🖨️ Packing Slip</button>
+          <button class="btn btn-secondary btn-sm" onclick="printInvoice()">🧾 Tax Invoice</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:.75rem;">
+          <label style="font-size:.82rem;font-weight:600;color:var(--muted);">Update Status</label>
+          <select class="status-select" id="orderStatusSelect" onchange="saveOrderStatus()"></select>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CSV import modal — paste or upload a product spreadsheet -->
+<div class="modal-overlay" id="importModalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h3>Import Products from CSV</h3>
+      <button class="modal-close" onclick="closeImportModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <p style="font-size:.875rem;color:var(--muted);margin-bottom:.75rem;">Upload a CSV to create or update products. Products are matched by SKU — if a SKU exists it will be updated, otherwise a new product is created.</p>
+      <button class="btn btn-secondary btn-sm" onclick="downloadImportTemplate()" style="margin-bottom:1rem;">⬇ Download Template</button>
+      <div class="form-group">
+        <label>Select CSV File</label>
+        <input type="file" id="importCsvFile" accept=".csv,text/csv" onchange="handleImportFile(this)" style="display:block;margin-top:.3rem;">
+      </div>
+      <div id="importPreview" style="display:none;margin-top:.5rem;">
+        <div id="importPreviewTable" class="table-wrap" style="max-height:180px;overflow-y:auto;font-size:.8rem;"></div>
+        <p id="importPreviewCount" style="font-size:.78rem;color:var(--muted);margin:.4rem 0 0;"></p>
+      </div>
+      <div id="importResult"></div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-secondary" onclick="closeImportModal()">Close</button>
+      <button class="btn btn-primary" id="importSubmitBtn" onclick="submitImport()" style="display:none;">Import Products</button>
+    </div>
+  </div>
+</div>
+
+<!-- category create/edit modal -->
+<div class="modal-overlay" id="catModalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="catModalTitle">New Category</h3>
+      <button class="modal-close" onclick="closeCatModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="catId">
+      <div class="form-group">
+        <label>Name <span style="color:var(--accent)">*</span></label>
+        <input type="text" id="catName" placeholder="e.g. Hand Tools">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="catDesc" placeholder="Brief description of this category"></textarea>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-secondary" onclick="closeCatModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveCat()">Save Category</button>
+    </div>
+  </div>
+</div>
+
+<!-- product create/edit modal — includes image upload -->
+<div class="modal-overlay" id="itemModalOverlay">
+  <div class="modal">
+    <div class="modal-header">
+      <h3 id="itemModalTitle">New Item</h3>
+      <button class="modal-close" onclick="closeItemModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <input type="hidden" id="itemId">
+      <div class="form-group">
+        <label>Category <span style="color:var(--accent)">*</span></label>
+        <select id="itemCatId"></select>
+      </div>
+      <div class="form-group">
+        <label>Name <span style="color:var(--accent)">*</span></label>
+        <input type="text" id="itemName" placeholder="Product name">
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <textarea id="itemDesc" placeholder="Product description"></textarea>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Price ($) <span style="color:var(--accent)">*</span></label>
+          <input type="number" id="itemPrice" step="0.01" min="0" placeholder="0.00">
+        </div>
+        <div class="form-group">
+          <label>Initial Stock</label>
+          <input type="number" id="itemStock" min="0" placeholder="0">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>SKU</label>
+        <input type="text" id="itemSku" placeholder="e.g. TL-001">
+      </div>
+      <div class="form-group">
+        <label>Images <span style="font-weight:400;color:var(--muted);font-size:.78rem">— first image is the primary thumbnail</span></label>
+        <div id="imageGallery" class="img-gallery-grid"></div>
+        <div class="img-upload-zone" id="imageUploadZone">
+          <div class="img-drop-area" id="imgDropArea">
+            <div class="img-drop-icon">🖼️</div>
+            <div class="img-drop-text">Drop images here or <span class="img-browse-link">browse</span></div>
+            <div class="img-drop-hint">JPEG, PNG, WEBP — max 5 MB each · up to 10 images</div>
+          </div>
+          <input type="file" id="imageFileInput" accept="image/jpeg,image/png,image/gif,image/webp" multiple style="display:none">
+        </div>
+      </div>
+      <div class="form-group" id="itemActiveGroup" style="display:none;">
+        <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer;font-weight:500;">
+          <input type="checkbox" id="itemActive" style="accent-color:var(--accent);width:15px;height:15px;">
+          Active (visible in store)
+        </label>
+      </div>
+      <div class="form-group" style="margin:0">
+        <label style="display:flex;align-items:center;gap:.5rem;cursor:pointer;font-weight:500;">
+          <input type="checkbox" id="itemFeatured" style="accent-color:#f59e0b;width:15px;height:15px;">
+          ⭐ Featured — highlight on homepage
+        </label>
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="btn btn-secondary" onclick="closeItemModal()">Cancel</button>
+      <button class="btn btn-primary" onclick="saveItem()">Save Item</button>
+    </div>
+  </div>
+</div>
+
+<!-- customer detail modal — order history for a specific customer -->
+<div class="modal-overlay" id="custModalOverlay">
+  <div class="modal modal-lg">
+    <div class="modal-header">
+      <div>
+        <h3 id="custModalName" style="margin-bottom:.15rem"></h3>
+        <div id="custModalMeta" style="font-size:.78rem;color:var(--muted)"></div>
+      </div>
+      <button class="modal-close" onclick="closeCustomerModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <div id="custModalSummary" style="display:flex;gap:1.5rem;flex-wrap:wrap;margin-bottom:1.25rem;padding-bottom:1rem;border-bottom:1px solid var(--border)"></div>
+      <h4 style="font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);margin-bottom:.75rem">Order History</h4>
+      <div style="overflow-x:auto">
+        <table>
+          <thead><tr><th>Order #</th><th>Date</th><th>Status</th><th>Total</th></tr></thead>
+          <tbody id="custModalOrders"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>

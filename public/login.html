@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login — BIZ</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: #1a1a2e;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-box {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2.5rem 2rem;
+      width: 100%;
+      max-width: 360px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.4);
+    }
+    .logo {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: .25rem;
+    }
+    .logo span { color: #e94560; }
+    .subtitle {
+      text-align: center;
+      font-size: .82rem;
+      color: #888;
+      margin-bottom: 2rem;
+    }
+    .error-msg {
+      background: #fdecea;
+      color: #c0392b;
+      border-radius: 6px;
+      padding: .65rem .9rem;
+      font-size: .85rem;
+      margin-bottom: 1.2rem;
+      border-left: 3px solid #e74c3c;
+    }
+    label {
+      display: block;
+      font-size: .82rem;
+      font-weight: 600;
+      color: #444;
+      margin-bottom: .35rem;
+    }
+    input[type="password"] {
+      width: 100%;
+      padding: .65rem .85rem;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: .95rem;
+      outline: none;
+      transition: border-color .15s;
+      margin-bottom: 1.25rem;
+    }
+    input[type="password"]:focus { border-color: #e94560; }
+    button[type="submit"] {
+      width: 100%;
+      padding: .75rem;
+      background: #e94560;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    button[type="submit"]:hover { opacity: .88; }
+    .back-link {
+      text-align: center;
+      margin-top: 1.2rem;
+      font-size: .82rem;
+      color: #888;
+    }
+    .back-link a { color: #e94560; text-decoration: none; }
+    .back-link a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="logo">BIZ<span>Admin</span></div>
+    <div class="subtitle">Admin access only</div>
+
+    <div id="errorMsg" class="error-msg" style="display:none">Incorrect password. Try again.</div>
+
+    <form method="POST" action="/admin/login">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autofocus autocomplete="current-password" placeholder="Enter admin password">
+      <button type="submit">Sign In</button>
+    </form>
+
+    <div class="back-link"><a href="/">&#8592; Back to store</a></div>
+  </div>
+
+  <script>
+    // Show error if redirected back with ?error=1
+    if (new URLSearchParams(location.search).get('error')) {
+      document.getElementById('errorMsg').style.display = 'block';
+      document.getElementById('password').focus();
+    }
+  </script>
+</body>
+</html>
