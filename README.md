@@ -191,8 +191,6 @@ You can also download a backup anytime from **Admin → Settings → Backup & Re
 | VPS (Vultr / DigitalOcean) | A$12–18/mo | Recommended for always-on production |
 | Shared hosting (Node.js) | A$8–20/mo | Budget option |
 
-For SSL, use [Let's Encrypt](https://letsencrypt.org/) with Certbot — free.
-
 ---
 
 ## GST and tax invoices
